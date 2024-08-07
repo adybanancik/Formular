@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form id="myForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Introduceti emailul" required>
+
+    <label for="password">Parolă:</label>
+    <input type="password" id="password" name="password" placeholder="Introduceti parola" required minlength="3">
+
+    <label for="birthdate">Data nașterii:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <label>
+        <input type="checkbox" id="terms" name="terms" required>
+        Am citit si sunt de acord cu termenii si conditiile de utilizare.
+    </label>
+
+    <button type="submit">Trimite</button>
+</form>
+
+<div id="todoList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
